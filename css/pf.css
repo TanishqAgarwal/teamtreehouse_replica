@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-image: url('../images/wall8.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+header{
+	display: inline-block;
+}
+.top-name{
+	margin-top: 10px;
+	margin-left: 20px;
+	font-family: "Sofia";
+	font-size: 40px;
+}
+.tm-nav{
+	float: right;
+	width: 100%
+}
+.tm-nav ul li{
+	display: inline-block;
+}
+.tm-nav ul li a{
+	padding-top: 20px;
+	padding-left: 140px;
+	text-decoration: none;
+	font-family: "Lucida Console", Courier, monospace;
+	color: #13856a;
+	float: right;
+	font-size: 25px;
+}
+section{
+	margin-top: 100px;
+	border-radius: 20px;
+}
+.rounded-corner{
+	margin-top: -50px;
+	margin-left: 60px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	display: inline-block;
+	animation-name: pimage;
+	animation-duration: 3s;
+	box-shadow: 5px 5px 5px grey;
+}
+.tm-article{
+	margin-top: -65px;
+	margin-right: 100px;
+	width: 600px;
+	float: right;
+	font-family: 'Amita';
+	font-size: 40px;
+	color: #402727;
+}
+article{
+	animation: intro 3s;
+}
+
+.tm-nav ul li a:hover{
+	font-size: 25.5px;
+	color: black;
+	text-shadow: 2px 2px 2px grey;
+}
+
+@keyframes pimage{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes intro {
+	0%{
+		opacity: 0;
+		transform: scale3d(.75,.75,1);
+	}
+	100%{
+		opacity: 1;
+		transform: scale3d(1,1,1);
+	}
+}

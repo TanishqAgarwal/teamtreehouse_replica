@@ -1,0 +1,9 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.grad1 {
+	background: red;
+	background: linear-gradient(to bottom right,red, white);
+	width: 100%;
+}
